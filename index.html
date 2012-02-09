@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>ebilog</title>
+		<title>elad ben-israel - hacking on stuff</title>
 
 		<meta name="author" content="elad ben-israel">
 
@@ -10,7 +10,7 @@
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 
-		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
  		<style type="text/css">
       body {
         padding-top: 60px;
@@ -20,7 +20,7 @@
         padding: 9px 0;
       }
     </style>
-  	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
   	<link href="css/my.css" rel="stylesheet">
 	</head>
 
@@ -47,10 +47,10 @@
               <li class="nav-header">apps</li>
               <dl>
               	<dt><a href="http://telobike.citylifeapps.com">telobike</a></dt>
-              	<dd>an nice little iphone app me and my boyfriend built to view near by tel-aviv bicycle scheme stations with real-time availability information</dd>
+              	<dd>a little iphone app me and my <a href='https://www.facebook.com/nirsa'>boyfriend</a> built to view nearby tel-aviv bicycle rental stations with real-time availability data <small>(<a href='https://github.com/eladb/telobike'>src</a>)</small></dd>
               </dl>
               <br/>
-              <li class="nav-header">node.js</li>
+              <li class="nav-header">libraries</li>
               <dl>
               	<dt><a href="https://github.com/anodejs/node-ctxobj">ctxobj</a></dt>
               	<dd>push/pop context from objects, especially useful for contextual logging</dd>
@@ -61,37 +61,55 @@
               	</dd>
               </dl>
               <dl>
-              	<dt><a href="https://github.com/anodejs/node-spinner">node-spinner</a></dt>
-              	<dd>spawns and maintains the lifetime of child-processes; automatic recycle upon file changes; automatic stop on idle</dd>
+              	<dt><a href="https://github.com/anodejs/node-spinner">spinner</a></dt>
+              	<dd>spawns and maintains the lifetime of child-processes; automatic recycle upon file changes; automatic stop after some idle time</dd>
               </dl>
               <dl>
-              	<dt><a href="https://github.com/anodejs/node-farmjs">node-farmjs</a><dt>
-              	<dd>a node.js vhost-based app router</dd>
+              	<dt><a href="https://github.com/anodejs/node-farmjs">farmjs</a><dt>
+              	<dd>a node vhost-based app router</dd>
               </dl>
               <dl>
-              	<dt><a href="https://github.com/eladb/node-statestream">node-statestream</a></dt>
+              	<dt><a href="https://github.com/eladb/node-statestream">statestream</a></dt>
               	<dd>middleware for downstreaming state changes</dd>
               </dl>
               <dl>
-              	<dt><a href="https://github.com/eladb/node-jsplugs">node-jsplugs</a></dt>
-              	<dd>init.d-style plugin system for node.js, allows external extensibility</dd>
+              	<dt><a href="https://github.com/eladb/node-jsplugs">jsplugs</a></dt>
+              	<dd>init.d-style plugin system for node, allows external extensibility</dd>
               </dl>
               <dl>
-              	<dt><a href="https://github.com/eladb/mongueue">node-mongueue</a></dt>
+              	<dt><a href="https://github.com/eladb/mongueue">mongueue</a></dt>
               	<dd>queue implementation on top of mongo.db</dd>
+              </dl>
+              <dl>
+              	<dt><a href='https://github.com/anodejs/node-gits'>gits</a></dt>
+              	<dd>a node git toolbelt with some high-level functions</dd>
+              </dl>
+              <dl>
+              	<dt><a href='https://github.com/urigolani/rinuts'>rinuts</a><dt>
+              	<dd>automatically expose tests via rest endpoints (created by <a href='https://github.com/urigolani'>uri golani</a>; i helped in the design)
+              	</dd>
+              </dl>
+              <li class="nav-header">oldies</li>
+              <dl>
+              	<dt><a href='http://code.google.com/p/opencvdotnet/'>opencvdotnet</a>
+              	<dd>.net wrapper for opencv - not sure if anyone is actually using nowadays</dd>
+              </dl>
+              <dl>
+              	<dt><a href='http://code.google.com/p/pedrosh/'>pedrosh</a>
+              	<dd>a cli framework for *nix systems based on file system reflection. i hear a fork of this is actually used commercially</dd>
               </dl>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
 
-        <div class="span7">
+        <div class="span8">
           
 	          <h2>hey, i'm elad <small>/ˈɛlæd/</small></h2>
           <p>
-	        	i'm a programmer. still trying to figure out why i enjoy it so much.
+	        	i'm a programmer. still trying to figure out why i enjoy doing it so much.
 	        </p>
 
-          <p>i currently work for <a href='microsoft.com'>microsoft</a>, probably in one of the <a href='https://fbcdn-sphotos-a.akamaihd.net/hphotos-ak-ash4/429220_10150644246286474_282281666473_11000207_460568717_n.jpg'>awesomest teams</a> in the company, building location-based mobile services and scalable web stuff. recently, we are doing a lot of node.js (yes, microsoft is <a href='http://www.windowsazure.com/en-us/develop/nodejs'>cool</a> :-)).
+          <p>i work for <a href='microsoft.com'>microsoft</a>, probably in one of the <a href='https://www.facebook.com/photo.php?fbid=10150644246286474'>awesomest teams</a> in the company, building mobile apps, platforms and other scalable web stuff. recently, we are doing a lot of node.js (yes, microsoft is <a href='http://www.windowsazure.com/en-us/develop/nodejs'>cool</a> :-)).
           </p>
 
           <br/>
@@ -99,60 +117,155 @@
           <p>
           i (currently) believe in:
           <ul>
-          	<li><strong>open source</strong> - like good art</li>
-          	<li><strong>bottom-up engineering</strong> - what god meant when he invented <i>soft</i>ware</li>
-          	<li><strong>async communication</strong> - the only way i can still work while at the gym
+          	<li><strong>continuous, bottom-up, engineering</strong> - what god meant when he invented <i>soft</i>ware</li>
+          	<li><strong>open source</strong> - what god meant when he invented code</li>
+          	<li><strong>posix</strong> - what god meant when he invented abstractions</li>
+          	<li><strong>async communication</strong> - what god meant when he invented email</li>
+          	<li>!god</li>
           </ul>
 
           <br/>
 
           </p>
-          stuff i'm currently interested in:
+          stuff i'm interested in nowadays:
           <p>
           	<ul>
           		<li><strong>the web in all its glory</strong></li>
-          		<li><a href='nodejs.org'>node.js</a></li>
-          		<li>html5 | <a href='http://jquery.com/'>jquery</a> | <a href='http://twitter.github.com/bootstrap/'>bootstrap</a> (wow)</li>
+          		<li>
+          			<a href='nodejs.org'>node.js</a> - 
+          			single-threaded, async, dynamic, functional, awesome community - 
+          			what else can you ask for?
+          		</li>
+          		<li>
+          			<a href='http://highscalability.com'>scalable, distributed</a> systems
+          		</li>
+          		<li>
+          			html5,
+          			<a href='http://jquery.com'>jquery</a>,
+          			<a href='http://twitter.github.com/bootstrap'>bootstrap</a> (wow) -
+          			so much to play around with
+          		</li>
           		<li>
           			<a href='http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis'>nosql</a> -
-								i know, mongodb is <a href='http://www.youtube.com/watch?v=b2f-ditxtzs'>web scale</a>...          			
+								you know, <a href='http://www.youtube.com/watch?v=b2f-ditxtzs'>mongodb is web scale</a>
           		</li>
-          		<li><a href='http://highscalability.com/'>scalable, distributed</a> systems</li>
-          		<li>posix</li>
-          		<li>always <strong>linux</strong></li>
-          		<li>mobile apps</li>
+          		<li>
+          			mobile apps -
+          			<a href='http://www.apple.com/ios'>ios</a>,
+          			<a href='http://phonegap.com'>phonegap</a>
+          		</li>
+          		<li>software companies (and why they all loose their hearts after an ipo)</i>
+          		<li><a href='http://www.kernel.org'>linux</a> - always inspiring</li>
           	</ul>
           </p>
 
           <br/>
 
           <p>
-          projects i was recently involved in are on the <strong>left</strong>. check them out.
+          <i class='icon-arrow-left'></i> projects i was recently (and not so recently) involved in are on the <strong>left pane</strong>. check them out.
           </p>
 
           <br/>
 
           <p>
-          	here's some stacks i used to hack on:
+          	some of my history:
           	<ul>
+
           		<li>
-          			win32 <i class='icon-arrow-right'></i> 
-          			mfc <i class='icon-arrow-right'></i>
-          			com <i class='icon-arrow-right'></i>
-          			atl <i class='icon-arrow-right'></i>
-          			c#/.net <i class='icon-arrow-right'></i>
-          			wcf/asp.net <i class='icon-arrow-right'></i>
-          			azure
+          			<a href='http://en.wikipedia.org/wiki/Atari_8-bit_family#XL_Series'>atari</a>
+          				<i class='icon-arrow-right'></i>
+          			xt
+          				<i class='icon-arrow-right'></i>
+          			at
+          				<i class='icon-arrow-right'></i>
+          			386
+          				<i class='icon-arrow-right'></i>
+          			387
+          				<i class='icon-arrow-right'></i>
+          			486
+          				<i class='icon-arrow-right'></i>
+          			pentium
+          				<i class='icon-arrow-right'></i>
+          			...
           		</li>
 
           		<li>
-          			<span class='code'>while(1) { handle_next_event(e) }</span> <i class='icon-arrow-right'></i>
-          			<a href='http://en.wikipedia.org/wiki/microos'>uos</a> <i class='icon-arrow-right'></i>
-          			<a href='http://en.wikipedia.org/wiki/vxworks'>vxworks</a> <i class='icon-arrow-right'></i>
-          			embedded linux (<i>oh, yeah!!</i>)
+          			ms-dos (3.0+) 
+          				<i class='icon-arrow-right'></i>
+          			windows (2.0+, really)
+          				<i class='icon-arrow-right'></i>
+          			<a href='http://en.wikipedia.org/wiki/OS/2'>os/2</a> (2.0, warp)
+          				<i class='icon-arrow-right'></i>
+          			<a href='http://www.ubuntu.com/'>ubuntu</a>
+          				<i class='icon-arrow-right'></i>
+          			<a href='http://www.gentoo.org/'>gentoo</a>
+          				<i class='icon-arrow-right'></i>
+          			mac-osx (lion)
           		</li>
+
+          		<li>
+          			<a href='http://en.wikipedia.org/wiki/BASIC_(programming_language)'>basic</a>
+          				<i class='icon-arrow-right'></i>
+          			<a href='http://en.wikipedia.org/wiki/Pascal_(programming_language)'>pascal</a>
+          				<i class='icon-arrow-right'></i>
+          			<a href='http://en.wikipedia.org/wiki/C_(programming_language)'>c</a>
+          				<i class='icon-arrow-right'></i>
+          			<a href='http://en.wikipedia.org/wiki/C++_(programming_language)'>c++</a>
+          				<i class='icon-arrow-right'></i>
+          			<a href='http://en.wikipedia.org/wiki/Java_(programming_language)'>java</a>
+          				<i class='icon-arrow-right'></i>
+          			<a href='http://en.wikipedia.org/wiki/Python_(programming_language)'>python</a>
+          				<i class='icon-arrow-right'></i>
+          			<a href='http://en.wikipedia.org/wiki/C_Sharp_(programming_language)'>c#</a>
+          				<i class='icon-arrow-right'></i>
+          			<a href='http://en.wikipedia.org/wiki/Javascript_(programming_language)'>javascript</a>
+          		</li>
+
+          		<li>
+          			win32 
+          				<i class='icon-arrow-right'></i>
+          			mfc
+          				<i class='icon-arrow-right'></i>
+          			com
+          				<i class='icon-arrow-right'></i>
+          			atl
+          				<i class='icon-arrow-right'></i>
+          			c#/.net
+          				<i class='icon-arrow-right'></i>
+          			wcf/asp.net
+          		</li>
+
+          		<li>
+          			hack-your-own-os 
+          				<i class='icon-arrow-right'></i>
+          			<a href='http://en.wikipedia.org/wiki/MicroC/OS-II'>µos</a>
+          				<i class='icon-arrow-right'></i>
+          			<a href='http://en.wikipedia.org/wiki/vxworks'>vxworks</a> (and others)
+          				<i class='icon-arrow-right'></i>
+          			embedded linux (<i>hell, yeah!!</i>)
+          		</li>
+
+          	
 
           	</ul>
+          </p>
+
+          <br/>
+
+          <p>
+          	other parts of me:
+          	<ul>
+          		<li><a href='https://www.facebook.com/nirsa'>nir</a></li>
+          		<li>
+          			<a href='https://www.facebook.com/pages/לירון-סטודיו-לקדרות/288749314497996'>wheel pottery</a>
+          		</li>
+          		<li>workout and <a href='http://runkeeper.com/user/eladb'>run</a> outside. especially in new cities</li>
+          		<li>books, movies</li>
+          		<li>good food, good coffee</li>
+          		<li>music: corny girly stuff (adele, norah); good electro; good trance</li>
+          		<li>tel-aviv!</li>
+          	</ul>
+
           </p>
 
         </div><!--/span-->
@@ -165,145 +278,8 @@
 				<a href='https://github.com/eladb'>github</a>
 				|
 				<a href='https://twitter.com/emeshbi'>twitter</a>
-<!--
-				<iframe
-					src="http://markdotto.github.com/github-buttons/github-btn.html?user=eladb&type=follow"
-					allowtransparency="true" 
-					frameborder="0"
-					scrolling="0" 
-					width="110px" 
-					height="20px">
-				</iframe>
-
-				<a href="" 
-					 class="twitter-follow-button" 
-					 data-show-count="false">follow @emeshbi</a>
-				
-				<script>!function(d,s,id){var js,fjs=d.getelementsbytagname(s)[0];if(!d.getelementbyid(id)){js=d.createelement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentnode.insertbefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
--->
       </footer>
-    </div>
-
-    <!--
-    		       		<img src='img/avatar.jpg' style='max-width: 120px'></img>
--->
-    
-<!--
-		<div class='btn-toolbar'>
-
-			<div class='btn-group'>
-				<a href='#' class='btn'>b1</a>
-				<a href='#' class='btn'>b2</a>
-				<a href='#' class='btn'>b3</a>
-			</div>
-
-			<div class='btn-group'>
-				<a href='#' class='btn'>c1</a>
-				<a href='#' class='btn'>c2</a>
-				<a href='#' class='btn'>d3</a>
-			</div>
-
-		</div>
-
-		<div class="row-fluid">
-			<div class="span3">
-				<h1>column #1</h1>
-				<p>content for column #1.</p>
-						<div class='progress progress-striped active'>
-							<div class='bar' style='width: 80%'>
-							</div>
-						</div>
-			</div>
-			<div class="span3">
-				<h1>column #2</h1>
-				<h2>h2 also works</h2>
-				<p>
-				<ul class="unstyled well">
-					<li>item1</li>
-					<li>item2
-						<ol>
-						<li>item2.1</li>
-						<li>item2.2</li>
-						<li>item2.3</li>
-						<li>item2.4</li>
-						</ol>
-					</li>
-					<li>item3</li>
-				</ul>
-			
-				content for column #2.
-				</p>
-			</div>
-			<div class="span3">
-				<dl>
-					<dt>lorem ipsum</dt>
-					<dd>lorem ipsum dolor sit amet</dd>
-					<dt>consectetur</dt>
-					<dd>consectetur adipiscing elit</dd>
-					<dt>lorem ipsum</dt>
-					<dd>lorem ipsum dolor sit amet</dd>
-				</dl>
-			</div>
-		</div>
-
-		<div class="row-fluid">
-			<div class="span3">
-				<h1>column #1</h1>
-				<p>content for column #1.</p>
-			</div>
-
-			<div class="span9">
-
-		<p>
-			<table class='table table-striped'>
-				<thead>
-					<tr>
-						<th>#</th>
-						<th>first name</th>
-						<th>last name</th>
-						<th>language</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>1</td>
-						<td>some</td>
-						<td>one</td>
-						<td>english</td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>joe</td>
-						<td>sixpack</td>
-						<td>english</td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>stu</td>
-						<td><button class='btn btn-primary'>hello <i class='icon-play icon-white'/></button></td>
-						<td>code</td>
-					</tr>
-				</tbody>
-			</table>
-		</p>
-			</div>
-
-		</div>
-
-		<div class="row-fluid">
-			<div class="span9">
-				<h1>column #1</h1>
-				<p>this is fucking awesome!</p>
-				<blockquote>
-					<p>lorem ipsum dolor sit amet, consectetur adipiscing elit. integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-					<small>connor turnbull, august 30th</small>
-				</blockquote>
-			</div>
-		</div>
-	</div>
-	-->
-
+    </div>    
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script src="js/bootstrap-collapse.js"></script>
