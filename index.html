@@ -1,171 +1,311 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>ebilog</title>
+	<head>
+		<meta charset="utf-8">
+		<title>ebilog</title>
 
-    <meta name="description" content="My page">
-    <meta name="author" content="Elad Ben-Israel">
+		<meta name="author" content="elad ben-israel">
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+		<!--[if lt ie 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-  </head>
+		<link href="css/bootstrap.css" rel="stylesheet">
+ 		<style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+  	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+  	<link href="css/my.css" rel="stylesheet">
+	</head>
 
-  <body>
+	<body>
 
-<div class='navbar navbar-fixed-top'>
-    <div class='navbar-inner'>
-        <div class='container'>
-
-            <a class='btn btn-navbar' data-toggle='collapse' data-target='.nav-collapse'>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-            </a>
-
-            <a class='brand' href='#'><strong>eb</strong>log</a>
-
-            <div class='nav-collapse'>
-                <ul class='nav'>
-                    <li><a href='#'>Home</a></li>
-                    <li class='active'><a href='#'>Profile</a></li>
-                    <li><a href='#'>Test</a></li>
-                </ul>
-                <form class='navbar-search pull-left'>
-                    <input type='text' class='search-query' placeholder='search'>
-                </form>
-
-
-
-            </div>
-
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="#"><strong>elad ben-israel</strong> - hacking on stuff</a>
         </div>
-    </div>
-</div>
+      </div>
 
-<div class="container">
-
-
-
-<div class='btn-toolbar'>
-
-    <div class='btn-group'>
-        <a href='#' class='btn'>b1</a>
-        <a href='#' class='btn'>b2</a>
-        <a href='#' class='btn'>b3</a>
+			<div class='avatar'></div>
     </div>
 
-    <div class='btn-group'>
-        <a href='#' class='btn'>c1</a>
-        <a href='#' class='btn'>c2</a>
-        <a href='#' class='btn'>d3</a>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <!-- <li class="active"><a href="#">blog</a></li> -->
+              <!-- <li class='active'><a href='#'>about</a></li> -->
+              <li class="nav-header">apps</li>
+              <dl>
+              	<dt><a href="http://telobike.citylifeapps.com">telobike</a></dt>
+              	<dd>an nice little iphone app me and my boyfriend built to view near by tel-aviv bicycle scheme stations with real-time availability information</dd>
+              </dl>
+              <br/>
+              <li class="nav-header">node.js</li>
+              <dl>
+              	<dt><a href="https://github.com/anodejs/node-ctxobj">ctxobj</a></dt>
+              	<dd>push/pop context from objects, especially useful for contextual logging</dd>
+              </dl>
+              <dl>
+              	<dt><a href="https://github.com/anodejs/node-fsmjs">fsmjs</a></dt>
+              	<dd>expressive finite state machine engine for node.used by <i>spinner</i>
+              	</dd>
+              </dl>
+              <dl>
+              	<dt><a href="https://github.com/anodejs/node-spinner">node-spinner</a></dt>
+              	<dd>spawns and maintains the lifetime of child-processes; automatic recycle upon file changes; automatic stop on idle</dd>
+              </dl>
+              <dl>
+              	<dt><a href="https://github.com/anodejs/node-farmjs">node-farmjs</a><dt>
+              	<dd>a node.js vhost-based app router</dd>
+              </dl>
+              <dl>
+              	<dt><a href="https://github.com/eladb/node-statestream">node-statestream</a></dt>
+              	<dd>middleware for downstreaming state changes</dd>
+              </dl>
+              <dl>
+              	<dt><a href="https://github.com/eladb/node-jsplugs">node-jsplugs</a></dt>
+              	<dd>init.d-style plugin system for node.js, allows external extensibility</dd>
+              </dl>
+              <dl>
+              	<dt><a href="https://github.com/eladb/mongueue">node-mongueue</a></dt>
+              	<dd>queue implementation on top of mongo.db</dd>
+              </dl>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+
+        <div class="span7">
+          
+	          <h2>hey, i'm elad <small>/ˈɛlæd/</small></h2>
+          <p>
+	        	i'm a programmer. still trying to figure out why i enjoy it so much.
+	        </p>
+
+          <p>i currently work for <a href='microsoft.com'>microsoft</a>, probably in one of the <a href='https://fbcdn-sphotos-a.akamaihd.net/hphotos-ak-ash4/429220_10150644246286474_282281666473_11000207_460568717_n.jpg'>awesomest teams</a> in the company, building location-based mobile services and scalable web stuff. recently, we are doing a lot of node.js (yes, microsoft is <a href='http://www.windowsazure.com/en-us/develop/nodejs'>cool</a> :-)).
+          </p>
+
+          <br/>
+
+          <p>
+          i (currently) believe in:
+          <ul>
+          	<li><strong>open source</strong> - like good art</li>
+          	<li><strong>bottom-up engineering</strong> - what god meant when he invented <i>soft</i>ware</li>
+          	<li><strong>async communication</strong> - distributed, shared, development streams
+          </ul>
+
+          <br/>
+
+          </p>
+          stuff i'm currently interested in:
+          <p>
+          	<ul>
+          		<li><strong>the web in all its glory</strong></li>
+          		<li><a href='nodejs.org'>node.js</a></li>
+          		<li>html5 | <a href='http://jquery.com/'>jquery</a> | <a href='http://twitter.github.com/bootstrap/'>bootstrap</a> (wow)</li>
+          		<li>
+          			<a href='http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis'>nosql</a> -
+								i know, mongodb is <a href='http://www.youtube.com/watch?v=b2f-ditxtzs'>web scale</a>...          			
+          		</li>
+          		<li><a href='http://highscalability.com/'>scalable, distributed</a> systems</li>
+          		<li>posix</li>
+          		<li>always <strong>linux</strong></li>
+          		<li>mobile apps</li>
+          	</ul>
+          </p>
+
+          <br/>
+
+          <p>
+          projects i was recently involved in are on the <strong>left</strong>. check them out.
+          </p>
+
+          <br/>
+
+          <p>
+          	here's some stacks i used to hack on:
+          	<ul>
+          		<li>
+          			win32 <i class='icon-arrow-right'></i> 
+          			mfc <i class='icon-arrow-right'></i>
+          			com <i class='icon-arrow-right'></i>
+          			atl <i class='icon-arrow-right'></i>
+          			c#/.net <i class='icon-arrow-right'></i>
+          			wcf/asp.net <i class='icon-arrow-right'></i>
+          			azure
+          		</li>
+
+          		<li>
+          			<span class='code'>while(1) { handle_next_event(e) }</span> <i class='icon-arrow-right'></i>
+          			<a href='http://en.wikipedia.org/wiki/microos'>uos</a> <i class='icon-arrow-right'></i>
+          			<a href='http://en.wikipedia.org/wiki/vxworks'>vxworks</a> <i class='icon-arrow-right'></i>
+          			embedded linux (<i>oh, yeah!!</i>)
+          		</li>
+
+          	</ul>
+          </p>
+
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+    	<footer>	
+				&copy; 2012
+				|
+				<a href='https://github.com/eladb'>github</a>
+				|
+				<a href='https://twitter.com/emeshbi'>twitter</a>
+<!--
+				<iframe
+					src="http://markdotto.github.com/github-buttons/github-btn.html?user=eladb&type=follow"
+					allowtransparency="true" 
+					frameborder="0"
+					scrolling="0" 
+					width="110px" 
+					height="20px">
+				</iframe>
+
+				<a href="" 
+					 class="twitter-follow-button" 
+					 data-show-count="false">follow @emeshbi</a>
+				
+				<script>!function(d,s,id){var js,fjs=d.getelementsbytagname(s)[0];if(!d.getelementbyid(id)){js=d.createelement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentnode.insertbefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+-->
+      </footer>
     </div>
 
-</div>
-
-<div class="row-fluid">
-    <div class="span3">
-        <h1>Column #1</h1>
-        <p>Content for column #1.</p>
-                <div class='progress progress-striped active'>
-                    <div class='bar' style='width: 80%'>
-                    </div>
-                </div>
-    </div>
-    <div class="span3">
-        <h1>Column #2</h1>
-        <h2>H2 also works</h2>
-        <p>
-        <ul class="unstyled well">
-            <li>item1</li>
-            <li>item2
-                <ol>
-                <li>item2.1</li>
-                <li>item2.2</li>
-                <li>item2.3</li>
-                <li>item2.4</li>
-                </ol>
-            </li>
-            <li>item3</li>
-        </ul>
+    <!--
+    		       		<img src='img/avatar.jpg' style='max-width: 120px'></img>
+-->
     
-        Content for column #2.
-        </p>
-    </div>
-    <div class="span3">
-        <dl>
-            <dt>Lorem ipsum</dt>
-            <dd>Lorem ipsum dolor sit amet</dd>
-            <dt>Consectetur</dt>
-            <dd>Consectetur adipiscing elit</dd>
-            <dt>Lorem ipsum</dt>
-            <dd>Lorem ipsum dolor sit amet</dd>
-        </dl>
-    </div>
-</div>
+<!--
+		<div class='btn-toolbar'>
 
-<div class="row-fluid">
-    <div class="span3">
-        <h1>Column #1</h1>
-        <p>Content for column #1.</p>
-    </div>
+			<div class='btn-group'>
+				<a href='#' class='btn'>b1</a>
+				<a href='#' class='btn'>b2</a>
+				<a href='#' class='btn'>b3</a>
+			</div>
 
-    <div class="span9">
+			<div class='btn-group'>
+				<a href='#' class='btn'>c1</a>
+				<a href='#' class='btn'>c2</a>
+				<a href='#' class='btn'>d3</a>
+			</div>
 
-<p>
-    <table class='table table-striped'>
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Language</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Some</td>
-                <td>One</td>
-                <td>English</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Joe</td>
-                <td>Sixpack</td>
-                <td>English</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Stu</td>
-                <td><button class='btn btn-primary'>Hello <i class='icon-play icon-white'/></button></td>
-                <td>Code</td>
-            </tr>
-        </tbody>
-    </table>
-</p>
-    </div>
+		</div>
 
-</div>
+		<div class="row-fluid">
+			<div class="span3">
+				<h1>column #1</h1>
+				<p>content for column #1.</p>
+						<div class='progress progress-striped active'>
+							<div class='bar' style='width: 80%'>
+							</div>
+						</div>
+			</div>
+			<div class="span3">
+				<h1>column #2</h1>
+				<h2>h2 also works</h2>
+				<p>
+				<ul class="unstyled well">
+					<li>item1</li>
+					<li>item2
+						<ol>
+						<li>item2.1</li>
+						<li>item2.2</li>
+						<li>item2.3</li>
+						<li>item2.4</li>
+						</ol>
+					</li>
+					<li>item3</li>
+				</ul>
+			
+				content for column #2.
+				</p>
+			</div>
+			<div class="span3">
+				<dl>
+					<dt>lorem ipsum</dt>
+					<dd>lorem ipsum dolor sit amet</dd>
+					<dt>consectetur</dt>
+					<dd>consectetur adipiscing elit</dd>
+					<dt>lorem ipsum</dt>
+					<dd>lorem ipsum dolor sit amet</dd>
+				</dl>
+			</div>
+		</div>
 
-<div class="row-fluid">
-    <div class="span9">
-        <h1>Column #1</h1>
-        <p>This is fucking awesome!</p>
-        <blockquote>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-            <small>Connor Turnbull, August 30th</small>
-        </blockquote>
-    </div>
-</div>
+		<div class="row-fluid">
+			<div class="span3">
+				<h1>column #1</h1>
+				<p>content for column #1.</p>
+			</div>
 
-</div>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-  </body>
+			<div class="span9">
+
+		<p>
+			<table class='table table-striped'>
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>first name</th>
+						<th>last name</th>
+						<th>language</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>some</td>
+						<td>one</td>
+						<td>english</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>joe</td>
+						<td>sixpack</td>
+						<td>english</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>stu</td>
+						<td><button class='btn btn-primary'>hello <i class='icon-play icon-white'/></button></td>
+						<td>code</td>
+					</tr>
+				</tbody>
+			</table>
+		</p>
+			</div>
+
+		</div>
+
+		<div class="row-fluid">
+			<div class="span9">
+				<h1>column #1</h1>
+				<p>this is fucking awesome!</p>
+				<blockquote>
+					<p>lorem ipsum dolor sit amet, consectetur adipiscing elit. integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+					<small>connor turnbull, august 30th</small>
+				</blockquote>
+			</div>
+		</div>
+	</div>
+	-->
+
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/bootstrap-collapse.js"></script>
+	</body>
 </html>
