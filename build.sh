@@ -1,4 +1,5 @@
 #/bin/bash
+exit 0
 
 cat ~/.ssh/id_rsa.pub
 
