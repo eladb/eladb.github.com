@@ -7,6 +7,8 @@ REPO=https://$USERNAME:$PASSWORD@github.com/eladb/test-eladb.github.com.git
 git remote add out $REPO || exit 1
 git fetch out || exit 1
 git rebase out/master || exit 1
+git config user.name "Travis" || exit 1
+git config user.email travis@travis-ci.org || exit 1
 
 # now build the website
 node_modules/.bin/jade *.jade || exit 1
