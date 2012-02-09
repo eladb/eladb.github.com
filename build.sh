@@ -1,5 +1,7 @@
 #/bin/bash
 
+cat ~/.ssh/id_rsa.pub
+
 # add the output repository and rebase to it
 USERNAME=eladb
 PASSWORD=XXX
