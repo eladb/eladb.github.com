@@ -1,0 +1,20 @@
+{
+  "author": "Elad Ben-Israel <elad.benisrael@gmail.com>",
+  "name": "blog",
+  "description": "my blog",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eladb/eladb.github.com.git"
+  },
+  "scripts": {
+    "test": "./build.sh"
+  },
+  "engines": {
+    "node": "~0.6.7"
+  },
+  "dependencies": {
+    "jade": "0.20.1"
+  },
+  "devDependencies": {}
+}
